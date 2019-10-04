@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Compound Interest Calculator</title>
+
+    <link rel="canonical" href="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" rel="stylesheet">    
+    <link href="assets/css/style.css" rel="stylesheet">    
+    
+    
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+        <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="assets/img/Ci_2017.png" alt="" width="100" height="100">
+        <h2>Compound Interest Calculator</h2>
+        <p class="lead">Code by Ikhlaque Ahmed</p>
+        </div>
+
+        <div class="row">
+        <div class="col-md-12 order-md-2 mb-4">
+            <h3>Your investment options:</h3>
+        </div>
+        </div>
+        <div class="row  mb-60">
+            <div class="col-md-5 mb-20">            
+                <div class="input-effect">
+                    <input class="effect" type="text"  id="investmentAmount">
+                    <label>Investment Amount</label>
+                    <span class="focus-border"></span>
+                </div>                    
+            </div>
+            <div class="col-md-7 mb-20">
+                <input type="range" min="1" max="100000" value="0" class="slider" id="myRangeInvestmentRange">
+            </div>
+        
+        
+            <div class="col-md-5 mb-20">            
+                <div class="input-effect">
+                    <input class="effect" type="text"  id="interestrate">
+                    <label>Interest Rate</label>
+                    <span class="focus-border"></span>
+                </div>                  
+            </div>                            
+            <div class="col-md-7 mb-20">
+                <input type="range" min="1" max="10" value="0" class="slider" id="myRangeInterestRate">
+            </div>
+        
+                <div class="col-md-5 mb-20">                        
+                    <div class="input-effect">
+                        <input class="effect" type='text' id="year"/> 
+                        <label>Year</label>
+                        <span class="focus-border"></span>
+                    </div>                   
+                </div>
+                <div class="col-md-7 mb-20">
+                    <input type="range" min="1" max="10" value="0" class="slider" id="myRangeYear">
+                </div>
+
+                <div class="col-md-12">
+                <div class="flex-centered">
+                    <input type="button" value="Calculate"  id="calculate" class="btn btn-primary btn-custom"/>
+                </div>
+                </div>
+        </div>
+                
+        
+        
+
+        <div class="row">
+            <div class="col-md-12 order-md-2 mb-4">
+                <h3>Investment REturn by Year:</h3>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">Year</th>
+                        <th scope="col">Yearly</th>
+                        </tr>
+                    </thead>
+                    <tbody id="generate">                                              
+                    </tbody>
+                </table>
+            </div>
+            <div class="col=md-6">
+                    <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>    
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>    
+    <script src="assets/js/main.js"></script>
+   
+  </body>
+</html>
